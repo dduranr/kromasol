@@ -1,0 +1,186 @@
+$gray1: #5A5A5A;
+$gray2: #171717;
+$gray3: #363636;
+$blue1: #02ABE9;
+
+
+
+// El siguiente mixin tiene dos posibles valores para el único parámetro:
+// 		- content-box --> Equivale al modelo de caja normal
+// 		- border-box  --> EL padding y border no aumentan el ancho del elemento
+@mixin boxSizing($borderBox) {
+    -webkit-box-sizing: $borderBox;
+     -moz-box-sizing: $borderBox;
+      -ms-box-sizing: $borderBox;
+       -o-box-sizing: $borderBox;
+          box-sizing: $borderBox;
+    }
+    
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+
+@mixin transitiondelay($transition) {
+    -webkit-transition-delay: $transition;
+    -moz-transition-delay: $transition;
+    -ms-transition-delay: $transition;
+    -o-transition-delay: $transition;
+    transition-delay: $transition;
+}
+
+@mixin displayBox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+}
+
+
+@mixin radius($radio) {
+    -webkit-border-radius: $radio;
+    -moz-border-radius: $radio;
+    -ms-border-radius: $radio;
+    -o-border-radius: $radio;
+    border-radius: $radio;
+}
+
+@mixin centrarXY($display, $color, $position, $top, $left, $align, $translateY, $translateX, $z-index) {
+	> * {color: $color;}
+	display: $display;
+	position: $position;
+	top: $top;
+	left: $left;
+	text-align: $align;
+	-webkit-transform: translate($translateX, $translateY);
+	-ms-transform: translate($translateX, $translateY);
+	transform: translate($translateX, $translateY);
+	z-index: $z-index;
+}
+
+
+$futura_regular: 'tk-futura-pt-n3';
+$futura_condensed_bold: 'tk-futura-pt-bold-n7';
+
+
+// $futura_bold_font: 'Conv_futura bold font';
+// @font-face {
+//   font-family: $futura_bold_font;
+//   src: url('../fonts/futura bold font.eot');
+//   src: local('☺'), url('../fonts/futura bold font.woff') format('woff'), url('../fonts/futura bold font.ttf') format('truetype'), url('../fonts/futura bold font.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// $futura_book_font: 'Conv_futura book font';
+// @font-face {
+//   font-family: $futura_book_font;
+//   src: url('../fonts/futura book font.eot');
+//   src: local('☺'), url('../fonts/futura book font.woff') format('woff'), url('../fonts/futura book font.ttf') format('truetype'), url('../fonts/futura book font.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// $futura_light_bt: 'Conv_futura light bt';
+// @font-face {
+//   font-family: $futura_light_bt;
+//   src: url('../fonts/futura light bt.eot');
+//   src: local('☺'), url('../fonts/futura light bt.woff') format('woff'), url('../fonts/futura light bt.ttf') format('truetype'), url('../fonts/futura light bt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// $futura_light_font: 'Conv_futura light font';
+// @font-face {
+//   font-family: $futura_light_font;
+//   src: url('../fonts/futura light font.eot');
+//   src: local('☺'), url('../fonts/futura light font.woff') format('woff'), url('../fonts/futura light font.ttf') format('truetype'), url('../fonts/futura light font.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// $futura_medium_bt: 'Conv_futura medium bt';
+// @font-face {
+//   font-family: $futura_medium_bt;
+//   src: url('../fonts/futura medium bt.eot');
+//   src: local('☺'), url('../fonts/futura medium bt.woff') format('woff'), url('../fonts/futura medium bt.ttf') format('truetype'), url('../fonts/futura medium bt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// $futura_medium_condensed_bt: 'Conv_futura medium condensed bt';
+// @font-face {
+//   font-family: $futura_medium_condensed_bt;
+//   src: url('../fonts/futura medium condensed bt.eot');
+//   src: local('☺'), url('../fonts/futura medium condensed bt.woff') format('woff'), url('../fonts/futura medium condensed bt.ttf') format('truetype'), url('../fonts/futura medium condensed bt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+.titulo1 {
+    font-size: 35px;
+    color: $blue1;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+}
+.titulo2 {
+    font-size: 64px;
+    color: $blue1;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+    span {color: $gray3;}
+}
+.titulo3 {
+    font-size: 25px;
+    color: $blue1;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+}
+.titulo4 {
+    font-size: 45px;
+    color: $blue1;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+}
+.titulo5 {
+    font-size: 35px;
+    color: $gray3;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+}
+.titulo6 {
+    font-size: 35px;
+    color: #ffffff;
+    font-family: $futura_condensed_bold;
+    font-weight: bold;
+    span {color: $blue1;}
+}
+
+
+
+
+.parrafo1 {
+    font-size: 24px;
+    color: #ffffff;
+    span {color: $blue1;}
+}
+
+.parrafo2 {
+    font-size: 24px;
+    color: $blue1;
+    span {color: #ffffff;}
+}
+.parrafo3 {
+    font-size: 24px;
+    color: $gray3;
+    span {color: $blue1;}
+}
+
+
+.alignVertical {align-self: center;}

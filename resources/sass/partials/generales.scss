@@ -1,0 +1,195 @@
+body {
+    font-family: $futura_regular;
+    .seccion {
+        &.headerbar1 {
+            background-color: $gray1;
+        }
+        &.headerbar2 {
+            background-color: $blue1;
+            .navbar {
+                .navbar-nav {
+                    width: 100%;
+                    text-align: center;
+                    flex-direction: column;
+                    .nav-item {
+                        h3 {font-size: 38px;}
+                    }
+                }
+            }
+            select {
+                padding: 7px 16px;
+                border: 0;
+                border-radius: 5px;
+            }
+        }
+        &.contenido {
+            background-color: $gray2;
+
+            // LINKS
+            // LINKS
+            // LINKS
+            .links {
+                padding: 30px 0;
+                .left {
+                    ul {
+                        li {
+                            color: #fff;
+                            border-bottom: 1px solid $blue1;
+                            list-style: none;
+                            padding-left: 25px;
+                            padding-right: 5px;
+                            margin-bottom: 15px;
+                            img { margin-right: 15px;}
+                            &:last-child {
+                                border: 0;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    .img {
+                        border: 2px solid $blue1;
+                        border-radius: 5px;
+                        &.i1 {
+                            position: relative;
+                            margin-right: -81px;
+                            z-index: 99999999;
+                            background: #cccccc;
+                        }
+                    }
+                }
+            }
+
+            // UNA GRAN FAMILIA
+            // UNA GRAN FAMILIA
+            // UNA GRAN FAMILIA
+            .una-gran-familia {
+                .header {
+                    background-color: #fff;
+                    h1 {
+                        font-family: $futura_condensed_bold;
+                        font-weight: bold;
+                        color: $gray3;
+                        span {color: $blue1;}
+                    }
+                    .row {
+                        padding: 10px 0;
+                        img {width: 90%;}
+                    }
+                }
+
+                .mucha-actitud {
+                    margin: 30px 0;
+                    .parrafos {
+                        &.p1 {}
+                        &.p2 {}
+                    }
+                }
+
+                .presentacion {
+                    margin-bottom: 30px;
+                }
+
+                .banners {
+                    margin-bottom: 100px;
+                    a {
+                        display: block;
+                        margin: 20px 0;
+                    }
+                }
+
+                .empresa-mexicana {
+                    border-top: 3px solid $blue1;
+                    padding: 30px;
+                    background: #fff;
+                }
+                
+                .video {
+                    padding: 30px;
+                }
+                
+                .paises-11 {
+                    margin-bottom: 120px;
+                }
+                
+                .tu-negocio-digital {
+                    border-top: 3px solid $blue1;
+                    .filas {
+                        > .row {
+                            margin-bottom: 59px;
+                            .numero {
+                                align-self: center;
+                                h1 {color: #fff;}
+                            }
+                            .borde {
+                                width: 3px;
+                                max-width: 3px;
+                                padding: 0;
+                                margin: 0 20px 0 0;
+                                border-right: 3px solid $blue1;
+                            }
+                            .texto {
+                                align-self: center;
+                            }
+                        }
+                    }
+                }
+
+                .slider {
+                    margin: 100px 0 50px 0;
+                    .w-slider {
+                        padding: 0;
+                        #carouselExampleControls {
+                            padding: 30px;
+                            background-image: linear-gradient(to top,rgb(61,30,113),rgb(25,147,183));
+                            .carousel-item {
+                                .left {
+                                    padding: 0;
+                                }
+                                .right {
+                                    background-color: #171717;
+                                    // .cvertical {
+                                        // @include centrarXY(inline-block, #fff, absolute, 50%, 50%, center, -50%, -50%, 9);
+                                    // }
+                                    .texto {
+                                        color: #fff;
+                                        .descripcion {
+                                            font-size: 16px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .carousel-control-prev, .carousel-control-next {
+                            .carousel-control-prev-icon, .carousel-control-next-icon{
+                                background-color: $blue1;
+                                padding: 30px;
+                                border-radius: 50%;
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.footer {
+            background-color: $blue1;
+            padding: 15px 0 0px 0;
+            .left {
+                a {font-size: 38px;}
+            }
+            .right {
+                ul {
+                    li {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
