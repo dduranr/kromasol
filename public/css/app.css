@@ -15573,14 +15573,24 @@ body .seccion.headerbar2 {
   background-color: #02ABE9;
 }
 
-body .seccion.headerbar2 .navbar .navbar-nav {
+body .seccion.headerbar2 .navbar #navbarSupportedContent {
   width: 100%;
-  text-align: center;
-  flex-direction: column;
 }
 
-body .seccion.headerbar2 .navbar .navbar-nav .nav-item h3 {
+body .seccion.headerbar2 .navbar #navbarSupportedContent ul.navbar-nav {
+  display: inline-block;
+  text-align: center;
+}
+
+body .seccion.headerbar2 .navbar #navbarSupportedContent ul.navbar-nav .nav-item h3 {
   font-size: 38px;
+}
+
+body .seccion.headerbar2 .navbar #navbarSupportedContent form {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  float: right;
 }
 
 body .seccion.headerbar2 select {
@@ -15818,6 +15828,10 @@ body .seccion.footer .right ul li {
   body .seccion.headerbar2 .navbar #navbarSupportedContent {
     width: 100%;
     text-align: center;
+  }
+
+  body .seccion.headerbar2 .navbar #navbarSupportedContent form {
+    float: none;
   }
 
   body .seccion.contenido .links .right .img.i1 {
